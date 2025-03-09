@@ -1,13 +1,9 @@
-import React from 'react'
-import Image from '../../assets/images/Image.jfif'
-import { Itemtitle } from '../../components/Itemtitle/Itemtitle'
+import React from "react";
 
-export const Main = ({children}) => {
+export const Main = ({ children }) => {
   return (
-
-    <main>
-        {children}
+    <main className="flex flex-col min-h-screen"> 
+      <div className="flex-grow">{children}</div> 
     </main>
-    
-  )
-}
+  );
+};

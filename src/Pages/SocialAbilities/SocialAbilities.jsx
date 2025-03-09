@@ -1,15 +1,27 @@
-import React from 'react'
-import { Main } from '../../layouts/Main/Main'
-import { Itemtitle } from '../../components/Itemtitle/Itemtitle'
-import Image from '../../assets/images/don.jpg';
+import React from "react";
+import { CardInfo } from "../../components/CardInfo/CardInfo";
+import Image from "../../assets/images/SS.jpeg";
+import { Main } from "../../layouts/Main/Main";
 
 export const SocialAbilities = () => {
   return (
-        <Main >
-    
-          <Itemtitle content='Muy buenas a todos guapisimos' styles='text-blue-200 text-2xl pb-[2rem]  bg-blue-900 flex justify-center items-center'/>
-          <img src={Image} alt="" className='w-[700px] rounded-sm' />
-    
-        </Main>
-  )
-}
+    <Main>
+      <CardInfo
+        title="Habilidades Sociales"
+        text={
+          <div className="text-left space-y-4">
+            <div><strong>Responsabilidad:</strong> Cumplo con mis compromisos y tareas de manera eficiente.</div>
+            <div><strong>Recursividad:</strong> Encuentro soluciones creativas y eficientes ante los desafíos.</div>
+            <div><strong>Comunicación efectiva:</strong> Expreso mis ideas con claridad y escucho activamente.</div>
+            <div><strong>Trabajo en equipo:</strong> Me integro bien en grupos y contribuyo al logro de objetivos.</div>
+            <div><strong>Adaptabilidad:</strong> Me ajusto rápidamente a nuevos entornos y metodologías de trabajo.</div>
+            <div><strong>Proactividad:</strong> Tomo iniciativa y busco mejoras constantes en mi desempeño.</div>
+          </div>
+        }
+        image={Image}
+        imageWidth="w-72"  
+        imageHeight="h-72"
+      />
+    </Main>
+  );
+};
