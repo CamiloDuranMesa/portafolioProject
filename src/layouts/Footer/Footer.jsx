@@ -6,7 +6,7 @@ import { ItemNavbar } from "../../components/ItemNavbar/ItemNavbar";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row w-full min-h-[7vh] bg-blue-950 justify-center items-center gap-4 p-4 text-white text-center">
+    <footer className="flex flex-col md:flex-row w-full min-h-[7vh] bg-teal-600 justify-center items-center gap-4 p-4 text-white text-center">
       <p>
         Desarrollado por <strong>Camilo Durán Mesa</strong>
       </p>

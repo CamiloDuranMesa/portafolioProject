@@ -4,7 +4,7 @@ import { ItemText } from "../../components/ItemText/ItemText";
 
 export const CardInfo = ({ title, text, image,imageWidth = "w-56", imageHeight = "h-56" }) => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 rounded-xl shadow-lg mx-auto max-w-[70rem] w-full px-8 sm:px-16 my-24 min-h-[750px] md:min-h-[800px]">
+    <div className="flex flex-col items-center justify-center bg-gradient-to-r bg-teal-100 rounded-xl shadow-lg mx-auto max-w-[70rem] w-full px-8 sm:px-16 my-24 min-h-[750px] md:min-h-[800px]">
 
       
       <Itemtitle
