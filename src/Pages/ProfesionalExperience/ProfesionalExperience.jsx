@@ -1,7 +1,7 @@
 import React from "react";
 import { Main } from "../../layouts/Main/Main";
 import { CardInfo } from "../../components/CardInfo/CardInfo";
-import { ItemTitle } from "../../components/Itemtitle/Itemtitle";
+import { ItemTitle } from "../../components/ItemTitle/ItemTitle";
 import { ItemLink } from "../../components/ItemLink/ItemLink";
 
 export const ProfesionalExperience = () => {
