@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Itemtitle = ({content, styles}) => {
+export const ItemTitle = ({content, styles}) => {
   return (
     <h1 className={styles}>{content}</h1>
   )

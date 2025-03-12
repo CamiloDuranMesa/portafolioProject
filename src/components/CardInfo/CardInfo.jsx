@@ -1,15 +1,21 @@
 import React from "react";
-import { Itemtitle } from "../../components/Itemtitle/Itemtitle";
+import { ItemTitle } from "../../components/ItemTitle/ItemTitle";
 import { ItemText } from "../../components/ItemText/ItemText";
+import { motion } from "framer-motion";
 
-export const CardInfo = ({ title, text, image,imageWidth = "w-56", imageHeight = "h-56" }) => {
+export const CardInfo = ({ title, text, image, imageWidth = "w-56", imageHeight = "h-56", children }) => {
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-r bg-teal-100 rounded-xl shadow-lg mx-auto max-w-[70rem] w-full px-8 sm:px-16 my-24 min-h-[750px] md:min-h-[800px]">
-
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} // Aparece desde abajo con opacidad 0
+      animate={{ opacity: 1, y: 0 }} // Se vuelve visible y sube suavemente
+      transition={{ duration: 0.6, ease: "easeOut" }} // Suaviza la animación
+      className="flex flex-col items-center justify-center bg-teal-100 rounded-xl shadow-lg mx-auto max-w-[70rem] w-full px-8 sm:px-16 py-8 my-12  sm:my-16 md:my-20 flex-grow"
+    >
+    
       
-      <Itemtitle
+      <ItemTitle
         content={title}
-        styles="text-blue-950 text-2xl sm:text-3xl font-semibold mb-4 text-center"
+        styles="text-teal-900 text-2xl sm:text-3xl font-semibold mb-4 text-center"
       />
 
       <ItemText
@@ -17,13 +23,17 @@ export const CardInfo = ({ title, text, image,imageWidth = "w-56", imageHeight =
         styles="text-gray-800 text-sm sm:text-lg text-center mb-6 max-w-2xl"
       />
 
+      {image && (
         <img
-        src={image}
-        alt={title}
-        className={`rounded-xl shadow-2xl ${imageWidth} ${imageHeight} object-cover mb-4 border-4 border-white`}
-      />
+          src={image}
+          alt={title}
+          className={`rounded-xl shadow-2xl ${imageWidth} ${imageHeight} object-cover mb-4 border-4 border-white`}
+        />
+      )}
 
+      
+      {children}  
 
-    </div>
+    </ motion.div >
   );
 };
