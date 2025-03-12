@@ -3,7 +3,8 @@ import { CardInfo } from "../../components/CardInfo/CardInfo";
 import { Main } from "../../layouts/Main/Main";
 import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaJava, FaCss3Alt, FaJs } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiMysql, SiGithub, SiTailwindcss } from "react-icons/si";
-import { SkillCategory } from "../../components/skillCategory/skillCategory";
+import { SkillCategory } from "../../components/SkillCategory/SkillCategory1";
+
 
 export const HardSkills = () => {
   return (
@@ -31,12 +32,11 @@ export const HardSkills = () => {
             />
           
 
-            {/* Educación y Liderazgo */}
+            
             <div>
               <strong>Educación y Liderazgo:</strong> Experiencia en desarrollo de software, mentoría y lógica de programación.
             </div>
 
-            {/* Desarrollo Web */}
             <div>
               <strong>Desarrollo Web:</strong> Consumo de APIs, diseño y optimización de interfaces.
             </div>
