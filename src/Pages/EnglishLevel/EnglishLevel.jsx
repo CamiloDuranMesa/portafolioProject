@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Main } from "../../layouts/Main/Main";
-import { CardInfo } from "../../components/CardInfo/CardInfo";
+import { CardInfo } from "../../layouts/CardInfo/CardInfo";
 import { motion } from "framer-motion";
 
 export const EnglishLevel = () => {
@@ -16,7 +16,7 @@ export const EnglishLevel = () => {
       <CardInfo 
         title="My English Level: B1 (Intermediate)" 
         text="Here is an overview of my English skills at the B1 level."
-        image={null} // Evita que se muestre la imagen
+        image={null} 
       >
         
         <div className="grid grid-cols-2 gap-4 mt-4">

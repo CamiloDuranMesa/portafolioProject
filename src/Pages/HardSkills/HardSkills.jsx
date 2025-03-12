@@ -1,5 +1,5 @@
 import React from "react";
-import { CardInfo } from "../../components/CardInfo/CardInfo";
+import { CardInfo } from "../../layouts/CardInfo/CardInfo";
 import { Main } from "../../layouts/Main/Main";
 import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaJava, FaCss3Alt, FaJs } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiMysql, SiGithub, SiTailwindcss } from "react-icons/si";

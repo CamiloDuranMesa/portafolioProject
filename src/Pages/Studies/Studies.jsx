@@ -1,6 +1,6 @@
 import React from "react";
 import { Main } from "../../layouts/Main/Main";
-import { CardInfo } from "../../components/CardInfo/CardInfo";
+import { CardInfo } from "../../layouts/CardInfo/CardInfo";
 import { EducationItem } from "../../components/educationItem/educationItem";
 
 export const Studies = () => {

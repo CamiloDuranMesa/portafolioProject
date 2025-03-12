@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 export const CardInfo = ({ title, text, image, imageWidth = "w-56", imageHeight = "h-56", children }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }} // Aparece desde abajo con opacidad 0
-      animate={{ opacity: 1, y: 0 }} // Se vuelve visible y sube suavemente
-      transition={{ duration: 0.6, ease: "easeOut" }} // Suaviza la animación
+      initial={{ opacity: 0, y: 50 }} // Aparece la card por abajo
+      animate={{ opacity: 1, y: 0 }} // Animacion de la card
+      transition={{ duration: 0.6, ease: "easeOut" }} // Transición de aparición
       className="flex flex-col items-center justify-center bg-teal-100 rounded-xl shadow-lg mx-auto max-w-[70rem] w-full px-8 sm:px-16 py-8 my-12  sm:my-16 md:my-20 flex-grow"
     >
     

@@ -1,6 +1,6 @@
 import React from "react";
 import { Main } from "../../layouts/Main/Main";
-import { CardInfo } from "../../components/CardInfo/CardInfo";
+import { CardInfo } from "../../layouts/CardInfo/CardInfo";
 import { ItemTitle } from "../../components/ItemTitle/ItemTitle";
 import { ItemLink } from "../../components/ItemLink/ItemLink";
 
@@ -10,7 +10,7 @@ export const ProfesionalExperience = () => {
       <CardInfo
         title="Experiencia Profesional"
         text="Aún no tengo experiencia laboral formal, pero he desarrollado proyectos relevantes que destacan mis habilidades en desarrollo web y programación."
-        image={null} // No se muestra imagen
+        image={null} 
       >
         <div className="w-full mt-4 space-y-6">
           <ItemTitle

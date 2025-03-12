@@ -1,5 +1,5 @@
 import React from "react";
-import { CardInfo } from "../../components/CardInfo/CardInfo";
+import { CardInfo } from "../../layouts/CardInfo/CardInfo";
 import Image from "../../assets/images/SS.jpeg";
 import { Main } from "../../layouts/Main/Main";
 
