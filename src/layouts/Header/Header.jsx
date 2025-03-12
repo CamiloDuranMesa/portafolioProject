@@ -25,7 +25,7 @@ export const Header = () => {
       <ul
   className={`flex items-center space-x-8 md:flex
     max-md:flex-col max-md:space-x-0 max-md:space-y-4
-    max-md:absolute max-md:top-[4.28rem] max-md:left-0 max-md:bg-teal-600
+    max-md:absolute max-md:top-[4.27rem] max-md:left-0 max-md:bg-teal-600
     max-md:w-full max-md:py-4 max-md:shadow-lg max-md:transition-all max-md:duration-300
     ${isOpen ? "max-md:flex" : "max-md:hidden"}`}
     >
